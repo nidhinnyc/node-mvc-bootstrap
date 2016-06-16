@@ -18,6 +18,8 @@
   "homepage": "https://github.com/nidhinnyc/node-mvc-bootstrap#readme",
   "dependencies": {
     "express": "^4.13.4",
-    "morgan": "^1.7.0"
+    "morgan": "^1.7.0",
+    "cookie-parser": "latest",
+    "express-session": "latest"
   }
 }
