@@ -1,0 +1,24 @@
+{
+  "name": "node-mvc-bootstrap",
+  "version": "1.0.0",
+  "description": "node mvc bootstrap poc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nidhinnyc/node-mvc-bootstrap.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nidhinnyc/node-mvc-bootstrap/issues"
+  },
+  "homepage": "https://github.com/nidhinnyc/node-mvc-bootstrap#readme",
+  "dependencies": {
+    "express": "^4.13.4",
+    "express-handlebars": "latest",
+    "morgan": "^1.7.0"
+  }
+}
