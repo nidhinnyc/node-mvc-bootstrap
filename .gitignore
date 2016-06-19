@@ -11,7 +11,6 @@ __pycache__/
 env/
 build/
 develop-eggs/
-dist/
 downloads/
 eggs/
 .eggs/
@@ -63,3 +62,4 @@ target/
 
 # Dependency directory
 node_modules
+bower_components
