@@ -1,10 +1,7 @@
+var HomeController = require('./controllers/HomeController');
+
 module.exports = function(app){
-    app.get('/', function(req, res){
-        res.render('index')
-    })
-    
-    app.get('/:username/:password', function(req, res){
-        console.log(req.params.username)
-        console.log(req.params.password)
-    })
+    app.get('/', HomeController.index);
+    app.get('/methodone', HomeController.methodone);
+    app.get('/methodone', HomeController.methodtwo);
 }

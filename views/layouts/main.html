@@ -24,11 +24,17 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><b>bootstrap mvc</b></b></a>
+          <a class="navbar-brand" href="#"><b>node mvc bootstrap</b></b></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="#">Controller One</a></li>
+            <li class="active dropdown">
+                <a href="home/index" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Controller One <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="home/methodone">Method One</a></li>
+                <li><a href="home/methodtwo">Method Two</a></li>
+              </ul>
+              </li>
             <li><a href="#">Controller Two</a></li>
           </ul>
 
