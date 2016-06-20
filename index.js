@@ -1,9 +1,8 @@
 var express = require('express');
 var hbs = require('express-handlebars');
 var morgan = require('morgan');
-var path = require('path');
 
-var port = process.env.PORT || 3011;
+var port = process.env.PORT || 3000;
 
 var app = express();
 
@@ -19,7 +18,5 @@ handlebars = hbs.create({
 
 app.engine('html', handlebars.engine);
 app.set('view engine', 'html');
-
 require('./app/routes.js')(app);
-
 app.listen(port);
