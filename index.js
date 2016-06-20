@@ -6,10 +6,8 @@ var port = process.env.PORT || 3011
 
 var app = express()
 
-app.use('/bwr', express.static(__dirname + '/public/bower_components/'));
-app.use('/dist', express.static(__dirname + '/public/dist/'));
-app.use('/js', express.static(__dirname + '/public/js/'));
-app.use('/less', express.static(__dirname + '/public/less/'));
+app.use('/incl', express.static(__dirname + '/bower_components/'));
+
 app.use(morgan('dev'))
 
 handlebars = hbs.create({
@@ -21,5 +19,5 @@ app.engine('html', handlebars.engine)
 app.set('view engine', 'html');
 
 require('./app/routes.js')(app)
- 
+
 app.listen(port)

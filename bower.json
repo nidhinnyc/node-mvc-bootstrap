@@ -1,0 +1,21 @@
+{
+  "name": "node-mvc-bootstrap",
+  "description": "node mvc bootstrap poc",
+  "main": "index.js",
+  "authors": [
+    "Nidhin Surendran <nidhins@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/nidhinnyc/node-mvc-bootstrap",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.6"
+  }
+}
