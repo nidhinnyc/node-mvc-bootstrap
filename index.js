@@ -7,6 +7,7 @@ var port = process.env.PORT || 3011
 var app = express()
 
 app.use('/incl', express.static(__dirname + '/bower_components/'));
+app.use('/public', express.static(__dirname + '/public/'));
 
 app.use(morgan('dev'))
 
