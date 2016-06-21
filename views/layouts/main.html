@@ -7,8 +7,8 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <!-- Latest compiled and minified CSS -->
-    <link href="incl/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="public/css/app-style.css" rel="stylesheet">
+    <link href="/incl/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/app-style.css" rel="stylesheet">
     <!-- Latest compiled and minified CSS -->
     <title>Node MVC Bootstrap</title>
 </head>
@@ -24,24 +24,24 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#"><b>node mvc bootstrap</b></b></a>
+          <a class="navbar-brand" href="/home/index"><b>node mvc bootstrap</b></b></a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav pull-right">
             <li class="active dropdown">
-                <a href="home/index" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Controller One <span class="caret"></span></a>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home Controller<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                <li><a href="home/methodone">Method One</a></li>
-                <li><a href="home/methodtwo">Method Two</a></li>
+                <li><a href="/home/methodone">Method One</a></li>
+                <li><a href="/home/methodtwo">Method Two</a></li>
               </ul>
               </li>
-            <li><a href="#">Controller Two</a></li>
+            <li><a href="/two/index">Controller Two</a></li>
           </ul>
 
         </div><!--/.nav-collapse -->
       </div><!--/.container-fluid -->
     </nav>
-
+    {{{ body }}}
     <!-- Main component for a primary marketing message or call to action -->
     <div class="jumbotron">
       <h1>Navbar example</h1>
@@ -53,8 +53,8 @@
 
   </div> <!-- /container -->
 
-    <script src="incl/jquery/dist/jquery.min.js"></script>
-    <script src="incl/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="public/js/app.js"></script>
+    <script src="/incl/jquery/dist/jquery.min.js"></script>
+    <script src="/incl/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/public/js/app.js"></script>
 </body>
 </html>
