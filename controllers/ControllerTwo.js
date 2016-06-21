@@ -1,4 +1,5 @@
 exports.index = function(request, response){
-    response.render('two/index');
+    response.pageTitle = "Controller Two - Index";
+    response.render('two/index', response);
 };
  
