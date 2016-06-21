@@ -6,16 +6,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
-    <link rel="stylesheet/less" href="incl/bootstrap/less/bootstrap.less">
-    <title>Simple bootstrap</title>
+    <!-- Latest compiled and minified CSS -->
+    <link href="/incl/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/public/css/app-style.css" rel="stylesheet">
+    <!-- Latest compiled and minified CSS -->
+    <title>Node MVC Bootstrap</title>
 </head>
-
 <body>
-    <div id="wrapper">
-        {{{ body }}}
+  <div class="container">
+    <!-- Static navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/home/index"><b>node mvc bootstrap</b></b></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav pull-right">
+            <li class="active dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Home Controller<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                <li><a href="/home/methodone">Method One</a></li>
+                <li><a href="/home/methodtwo">Method Two</a></li>
+              </ul>
+              </li>
+            <li><a href="/two/index">Controller Two</a></li>
+          </ul>
 
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+    {{{ body }}}
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="jumbotron">
+      <h1>Navbar example</h1>
+      <p>This example is a quick exercise to illustrate how the default, static navbar and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
+      <p>
+        <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
+      </p>
     </div>
-    <script src="incl/bootstrap/dist/js/bootstrap.js"></script>
-</body>
 
+  </div> <!-- /container -->
+
+    <script src="/incl/jquery/dist/jquery.min.js"></script>
+    <script src="/incl/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/public/js/app.js"></script>
+</body>
 </html>

@@ -1,10 +1,10 @@
+var HomeController = require('../controllers/HomeController');
+var ControllerTwo = require('../controllers/ControllerTwo');
+
 module.exports = function(app){
-    app.get('/', function(req, res){
-        res.render('index')
-    })
-    
-    app.get('/:username/:password', function(req, res){
-        console.log(req.params.username)
-        console.log(req.params.password)
-    })
+    app.get('/', HomeController.index);
+    app.get('/home/index', HomeController.index);
+    app.get('/home/methodone', HomeController.methodone);
+    app.get('/home/methodtwo', HomeController.methodtwo);
+    app.get('/two/index', ControllerTwo.index);
 }
